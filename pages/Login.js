@@ -8,17 +8,17 @@ module.exports = {
   
   // setting locators
   txt: {
-    email: '//input[@placeholder="Email Address"]',
-    password: '//input[@placeholder="Password"]'
+    email: '[name="username"]',
+    password: '[name="password"]'
   },
   btn:{
-    submit: {css: 'input.btn.btn-primary'},
+    submit: {css: '.form-group-buttons>.btn.btn-primary'},
   },
 
   // introducing methods
   authenticate(email, password) {
     I.amOnPage('/')
-    I.see('Welcome to Care+');
+    I.see('Welcome Back, Please login');
     I.fillField(this.txt.email, email);
     I.fillField(this.txt.password, password);
     I.click(this.btn.submit);

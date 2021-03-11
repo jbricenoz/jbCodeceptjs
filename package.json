@@ -31,6 +31,7 @@
     "webdriverio": "^6.1.11"
   },
   "dependencies": {
+    "@testomatio/reporter": "^0.3.4",
     "@wdio/browserstack-service": "^6.1.10",
     "mochawesome": "^6.1.1",
     "playwright": "^1.0.1",

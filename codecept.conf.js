@@ -49,7 +49,7 @@ exports.config = {
     //   browser: 'chromium'
     // },
     WebDriver: {
-      url: 'http://ics-website-qa.s3-website-us-east-1.amazonaws.com',
+      url: 'http://cinch-qa-website.s3-website-us-east-1.amazonaws.com/',
       browser: 'safari',
       host: '127.0.0.1',
       port: 4444,
@@ -66,6 +66,11 @@ exports.config = {
       uniqueScreenshotNames: true,
       consoleReporter: true
     }
+  },
+  testomat: {
+    enabled: true,
+    require: '@testomatio/reporter/lib/adapter/codecept',
+    apiKey: 'z4248b0703cj',
   },
   include: {
     I: './steps_file.js',
